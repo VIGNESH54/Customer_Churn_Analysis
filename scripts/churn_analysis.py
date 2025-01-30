@@ -17,7 +17,7 @@ if not os.path.exists(images_folder):
     os.makedirs(images_folder)
 
 # ---------------------------
-# 🔹 Churn Distribution
+# Churn Distribution
 # ---------------------------
 plt.figure(figsize=(6, 4))
 sns.countplot(x="Churn", data=data, palette="coolwarm")
@@ -26,7 +26,7 @@ plt.savefig(os.path.join(images_folder, "churn_distribution.png"))
 plt.show()
 
 # ---------------------------
-# 🔹 Feature Importance Analysis
+# Feature Importance Analysis
 # ---------------------------
 # Calculate average values for Churn vs. Non-Churn customers
 churned = data[data["Churn"] == 1].mean()
