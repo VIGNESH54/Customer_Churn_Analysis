@@ -1,22 +1,21 @@
 # Core
-numpy>=1.26,<2.0
-pandas>=2.2,<3.0
-scipy>=1.11,<2.0
-scikit-learn>=1.4,<1.5
+numpy
+pandas
+scipy
+scikit-learn
 
 # App & viz
-streamlit>=1.37,<2.0
-plotly>=5.24,<6.0
-matplotlib>=3.8,<4.0
-seaborn>=0.13,<0.14
+streamlit
+plotly
+matplotlib
 
 # Optional but supported gracefully
-xgboost>=2.0,<2.1
-shap>=0.45,<0.46
-imbalanced-learn>=0.12,<0.13
+xgboost
+shap
+imbalanced-learn
 
 # Export
-openpyxl>=3.1,<4.0
+openpyxl
 
 # Misc
-joblib>=1.3,<2.0
+joblib
