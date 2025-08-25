@@ -1,75 +1,119 @@
-# 📊 Customer Churn Analysis
+# 📊 Customer Churn Analysis Dashboard
 
-## 📌 Project Overview
-Customer churn is a major concern for businesses, as retaining customers is often more cost-effective than acquiring new ones. This project analyzes customer churn data to identify key factors contributing to customer attrition. The analysis includes exploratory data analysis (EDA), feature importance evaluation, and visual insights.
+An interactive **Streamlit dashboard** to analyze, predict, and visualize customer churn.  
+Built with **Python, Scikit-Learn, and Streamlit**, this project transforms raw CSV data into **business insights** and **predictive analytics**.
 
-## 🚀 Key Features
-- **Churn Distribution Analysis** → Visualizes the number of churned vs. non-churned customers.
-- **Feature Importance Analysis** → Identifies which customer attributes influence churn the most.
-- **Data Cleaning & Preprocessing** → Ensures accurate and reliable data analysis.
-- **Data Visualization** → Uses Matplotlib & Seaborn to generate insightful charts.
+---
 
-## 🏗️ Technologies Used
-- **Python** → Data processing and analysis.
-- **pandas** → Data wrangling and manipulation.
-- **matplotlib & seaborn** → Data visualization.
+## 🚀 Features
 
-## 📂 Folder Structure
+- 📂 **Flexible CSV Upload** – works with any structured dataset
+- 🧹 **Smart Preprocessing** – automatic numeric & categorical column detection
+- ⚡ **Multi-Model Training**
+  - Logistic Regression
+  - Random Forest
+  - XGBoost
+- 📊 **Interactive Visualizations**
+  - Churn distribution
+  - Feature importance
+  - Correlation heatmaps
+  - SHAP explainability plots
+- 🧾 **Downloadable Reports**
+  - Excel report (metrics, predictions, feature importance)
+- 🎨 **Modern UI**
+  - Clean sidebar controls
+  - Responsive layout
+  - Dark/Light mode supported
+
+---
+
+## 🛠️ Tech Stack
+
+- [Streamlit](https://streamlit.io/) – UI & Dashboard  
+- [Pandas](https://pandas.pydata.org/) – Data manipulation  
+- [Scikit-Learn](https://scikit-learn.org/) – ML models  
+- [XGBoost](https://xgboost.ai/) – Advanced boosting model  
+- [SHAP](https://shap.readthedocs.io/) – Explainable AI  
+- [Matplotlib / Seaborn / Plotly](https://plotly.com/) – Visualizations  
+
+---
+
+## 📂 Project Structure
+
 ```
 Customer_Churn_Analysis/
-│── data/
-│   ├── customer_churn.csv   # Dataset file
-│── images/
-│   ├── churn_distribution.png   # Visualization of churned vs. non-churned customers
-│   ├── feature_importance.png   # Visualization of key churn factors
-│── scripts/
-│   ├── churn_analysis.py   # Python script for analysis
-│── README.md   # Project documentation
-│── requirements.txt   # Python dependencies
+│
+├── app.py                # Streamlit dashboard
+├── requirements.txt      # Dependencies
+├── .streamlit/
+│   └── config.toml       # UI theme
+├── scripts/              # Modularized logic
+│   ├── preprocessing.py  # Data cleaning
+│   ├── modeling.py       # Model training
+│   ├── evaluation.py     # Metrics & explainability
+│   ├── io_utils.py       # File handling
+│   └── utils.py          # Helpers
+└── README.md             # Project documentation
 ```
 
-## 📥 Installation & Setup
-To run this project on your local system:
+---
 
-1. **Clone the Repository**
+## ⚡ Usage
+
+1. **Clone the repo**
    ```bash
    git clone https://github.com/VIGNESH54/Customer_Churn_Analysis.git
    cd Customer_Churn_Analysis
    ```
-2. **Create & Activate Virtual Environment**
+
+2. **Create virtual environment**
    ```bash
    python3 -m venv venv
-   source venv/bin/activate  # macOS/Linux
-   venv\Scripts\activate  # Windows
+   source venv/bin/activate   # Mac/Linux
+   venv\Scripts\activate      # Windows
    ```
-3. **Install Dependencies**
+
+3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
-4. **Run the Analysis Script**
+
+4. **Run the app locally**
    ```bash
-   python scripts/churn_analysis.py
+   streamlit run app.py
    ```
 
-## 📊 Sample Output & Insights
-### **1️⃣ Churn Distribution**
-![Churn Distribution](images/churn_distribution.png)
-- Shows the proportion of customers who stayed vs. those who left.
+5. **Deploy to Streamlit Cloud**
+   - Connect GitHub repo
+   - Select `app.py` as entrypoint
 
-### **2️⃣ Feature Importance in Churn**
-![Feature Importance](images/feature_importance.png)
-- Highlights which factors (e.g., Monthly Charges, Support Calls) impact churn the most.
+---
 
-## 🎯 Business Impact
-This analysis helps businesses:
-- **Identify high-risk customers** likely to churn.
-- **Improve customer retention strategies** by targeting key risk factors.
-- **Optimize customer service** based on churn insights.
+## 🎯 Example Insights
 
-## 🤝 Contribution
-Feel free to fork this project, submit pull requests, or reach out for collaborations.
+- Identify high-risk churn segments  
+- Discover top predictors of churn (e.g., contract type, tenure, charges)  
+- Generate explainable ML predictions with SHAP  
 
-## 📞 Contact
-**GitHub:** [VIGNESH54](https://github.com/VIGNESH54)  
-**Email:** vignesh23557@gmail.com
+---
 
+## 📸 Screenshots
+
+*(Add app screenshots here once deployed!)*
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss your ideas.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+👨‍💻 Developed by **Vignesh P**  
+✨ Showcasing advanced **Data Science & ML Engineering skills**
