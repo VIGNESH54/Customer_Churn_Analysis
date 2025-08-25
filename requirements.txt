@@ -5,17 +5,18 @@ scipy>=1.11,<2.0
 scikit-learn>=1.4,<1.5
 
 # App & viz
-streamlit>=1.36
-plotly>=5.24
-matplotlib>=3.8
+streamlit>=1.37,<2.0
+plotly>=5.24,<6.0
+matplotlib>=3.8,<4.0
+seaborn>=0.13,<0.14
 
 # Optional but supported gracefully
-xgboost>=2.0
-shap>=0.45
-imbalanced-learn>=0.12
+xgboost>=2.0,<2.1
+shap>=0.45,<0.46
+imbalanced-learn>=0.12,<0.13
 
 # Export
-openpyxl>=3.1
+openpyxl>=3.1,<4.0
 
 # Misc
-joblib>=1.3
+joblib>=1.3,<2.0
