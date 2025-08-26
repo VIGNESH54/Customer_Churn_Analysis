@@ -4,3 +4,12 @@ backgroundColor="#F7F8FB"
 secondaryBackgroundColor="#FFFFFF"
 textColor="#0B1221"
 font="Inter"
+[server]
+maxUploadSize = 200
+headless = true
+
+[runner]
+fastReruns = true
+
+[cache]
+ttl = 3600
