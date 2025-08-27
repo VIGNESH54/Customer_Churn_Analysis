@@ -1,2 +1,23 @@
+# Basic build tools
 build-essential
+gcc
+g++
+make
+
+# Python build dependencies
+python3-dev
+libffi-dev
+libssl-dev
+
+# Math / scientific libs
 libatlas-base-dev
+liblapack-dev
+gfortran
+
+# Image / plotting support
+libgl1
+libglib2.0-0
+
+# Excel / file handling
+libxml2
+libxslt1-dev
